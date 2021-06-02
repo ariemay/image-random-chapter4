@@ -3,12 +3,21 @@ const imagePath = "assets/images/"
 
 let image1 = document.getElementById("image1")
 let image2 = document.getElementById("image2")
+let button = document.querySelector('#changeButton button')
+
 
 function getRandomImage() {
     let randomImage1 = Animals[Math.floor(Math.random() * Animals.length)]
     let randomImage2 = Animals[Math.floor(Math.random() * Animals.length)]
     image1.src = imagePath + randomImage1
     image2.src = imagePath + randomImage2
+
+    if (randomImage1 === randomImage2){
+        button.style.backgroundColor = "red";
+    } else {
+        button.style.backgroundColor = "inherit";
+    }
+
 }
 
 // TODO:
