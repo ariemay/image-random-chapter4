@@ -4,6 +4,7 @@ const imagePath = "assets/images/";
 let image1 = document.getElementById("image1");
 let image2 = document.getElementById("image2");
 const changeButton = document.getElementById("changeButton");
+const backgroundContainer = document.getElementById("main");
 
 function getRandomImage() {
   let randomImage1 = Animals[Math.floor(Math.random() * Animals.length)];
@@ -14,10 +15,14 @@ function getRandomImage() {
   if (image1.src === image2.src) {
     console.log("Tee Tooot");
     changeButton.style = "background-color: red;";
+    backgroundContainer.style = "background-color: azure;";
   } else {
     changeButton.style = "background-color: unset;";
+    backgroundContainer.style = "background-color: beige;";
   }
 }
+
+changeButton.onclick = getRandomImage;
 
 // TODO:
 /*
@@ -25,5 +30,3 @@ function getRandomImage() {
 maka tombol CHANGE akan berubah menjadi warna merah
 2. Hasil dari code challenge dipush ke github di branch masing2.
 */
-
-changeButton.onclick = getRandomImage;
