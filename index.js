@@ -11,4 +11,10 @@ function getRandomImage() {
     image2.src = imagePath + randomImage2
 }
 
+// TODO:
+/*
+1. Apabila saat random image menampilkan gambar yang sama,
+maka tombol CHANGE akan berubah menjadi warna merah
+*/
+
 const changeButton = document.getElementById("changeButton").onclick = getRandomImage
