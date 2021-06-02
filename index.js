@@ -17,5 +17,3 @@ function getRandomImage() {
 maka tombol CHANGE akan berubah menjadi warna merah
 2. Hasil dari code challenge dipush ke github di branch masing2.
 */
-
-const changeButton = document.getElementById("changeButton").onclick = getRandomImage
