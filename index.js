@@ -15,6 +15,7 @@ function getRandomImage() {
 /*
 1. Apabila saat random image menampilkan gambar yang sama,
 maka tombol CHANGE akan berubah menjadi warna merah
+2. Hasil dari code challenge dipush ke github di branch masing2.
 */
 
 const changeButton = document.getElementById("changeButton").onclick = getRandomImage
